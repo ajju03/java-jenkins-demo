@@ -43,14 +43,15 @@ This project shows how DevOps tools integrate together to automate a typical dev
 
 java-jenkins-demo/
 ├── src/
-│ └── main/
-│ └── java/
-│ └── App.java
+│   └── main/
+│       └── java/
+│           └── App.java
 ├── target/
-│ └── demo-1.0-SNAPSHOT.jar
+│   └── demo-1.0-SNAPSHOT.jar
 ├── pom.xml
 ├── Dockerfile
 └── Jenkinsfile
+
 
 
 ---
@@ -188,7 +189,7 @@ pipeline {
 }
 ```
 
-🧪 How to Run the Project Locally
+## 🧪 How to Run the Project Locally
 
 Clone this repository:
 ```
@@ -212,7 +213,8 @@ docker build -t ajayprasannaa/java-jenkins-demo:latest .
 ```
 
 Run Docker container:
-```docker run -d -p 8081:8080 ajayprasannaa/java-jenkins-demo:latest
+```
+docker run -d -p 8081:8080 ajayprasannaa/java-jenkins-demo:latest
 ```
 
 Access the app:
