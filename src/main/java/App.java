@@ -1,9 +1,14 @@
+package com.jenkins.demo;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.util.logging.Logger;
 import com.sun.net.httpserver.HttpServer;
 
 public class App {
+    private static final Logger logger = Logger.getLogger(App.class.getName());
+
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
         server.createContext("/", exchange -> {
@@ -14,6 +19,6 @@ public class App {
             }
         });
         server.start();
-        System.out.println("🚀 Server running on port 8080...");
+        logger.info("🚀 Server running on port 8080...");
     }
 }
