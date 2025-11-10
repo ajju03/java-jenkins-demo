@@ -52,10 +52,7 @@ java-jenkins-demo/
 ├── pom.xml
 ├── Dockerfile
 └── Jenkinsfile
-
-
-
----
+```
 
 ## 💻 Application Code
 
