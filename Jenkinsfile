@@ -14,7 +14,7 @@ pipeline {
         SONAR_TOKEN = credentials('sonarqubetoken')
 
         // DockerHub image name (replace with your DockerHub username)
-        DOCKER_IMAGE = 'ajju03/java-jenkins-demo:latest'
+        DOCKER_IMAGE = 'ajayprasannaa/java-jenkins-demo:latest'
     }
 
     stages {
@@ -94,3 +94,4 @@ pipeline {
         }
     }
 }
+
