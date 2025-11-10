@@ -41,6 +41,7 @@ This project shows how DevOps tools integrate together to automate a typical dev
 
 ## 🧩 Project Structure
 
+```plaintext
 java-jenkins-demo/
 ├── src/
 │   └── main/
