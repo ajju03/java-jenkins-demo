@@ -73,7 +73,7 @@ pipeline {
                 bat """
                     docker stop java-demo || echo "No existing container to stop"
                     docker rm java-demo || echo "No existing container to remove"
-                    docker run -d --name java-demo -p 8080:8080 %DOCKER_IMAGE%
+                    docker run -d --name java-demo -p 8081:8080 %DOCKER_IMAGE%
                 """
             }
         }
